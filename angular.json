@@ -8,7 +8,11 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -23,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -72,7 +76,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -87,6 +91,38 @@
             "tsConfig": [
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@notadd/ngx-tree-dnd": {
+      "root": "projects/notadd/ngx-tree-dnd",
+      "sourceRoot": "projects/notadd/ngx-tree-dnd/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/notadd/ngx-tree-dnd/tsconfig.lib.json",
+            "project": "projects/notadd/ngx-tree-dnd/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/notadd/ngx-tree-dnd/ng-package.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/notadd/ngx-tree-dnd/tsconfig.lib.json",
+              "projects/notadd/ngx-tree-dnd/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

@@ -14,6 +14,9 @@
  * Learn more in https://angular.io/docs/ts/latest/guide/browser-support.html
  */
 
+// see https://github.com/auth0/auth0.js/issues/753
+(window as any).global = window;
+
 /***************************************************************************************************
  * BROWSER POLYFILLS
  */

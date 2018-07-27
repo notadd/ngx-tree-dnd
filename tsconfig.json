@@ -15,6 +15,9 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@notadd/ngx-tree-dnd": ["dist/notadd/ngx-tree-dnd"]
+    }
   }
 }

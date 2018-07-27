@@ -1,0 +1,25 @@
+<div 
+	ngxDroppable 
+	[dropZone]="dropZone" 
+	[model]="model" 
+	[copy]="copy" 
+	[ngClass]="{ 'gu-empty': !model?.length }" 
+	[removeOnSpill]="removeOnSpill"
+  class='ngx-tree-dnd-container'>
+  <ng-container *ngIf="model">
+    <ng-container *ngFor="let item of model">
+			<ngx-tree-dnd-item 
+				ngxDraggable 
+				[model]="item" 
+				[dropZone]="dropZone" 
+				[dropZones]="dropZones" 
+				[copy]="copy" 
+				[moves]="moves"
+				[removeOnSpill]="removeOnSpill" 
+				[droppableItemClass]="droppableItemClass" 
+				[actions]="actions">
+      </ngx-tree-dnd-item>
+    </ng-container>
+  </ng-container>
+  <ng-content *ngIf="!model"></ng-content>
+</div>
