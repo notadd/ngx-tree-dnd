@@ -8,7 +8,7 @@
     "publish:lib": "cd dist/notadd/ngx-tree-dnd && npm publish --access public",
     "build:lib": "ng build @notadd/ngx-tree-dnd",
     "build:lib:prod": "ng build --prod @notadd/ngx-tree-dnd",
-    "deploy": "npm run build && angular-cli-ghpages --dir ./dist/ngx-tree-dnd/",
+    "deploy": "ng build --prod --base-href /ngx-tree-dnd/ && angular-cli-ghpages --dir ./dist/ngx-tree-dnd/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
