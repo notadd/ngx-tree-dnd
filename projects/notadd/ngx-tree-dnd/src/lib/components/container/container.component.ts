@@ -31,6 +31,7 @@ function getNextId() {
   encapsulation: ViewEncapsulation.None
 })
 export class ContainerComponent implements OnInit, AfterViewInit {
+  @Input() labelKey: string;
   @Input() model: any;
   @Input() copy = false;
   @Input() removeOnSpill = false;
@@ -78,6 +79,7 @@ export class ContainerComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this._defaultZones = [this.dropZone];
+    console.log(this.labelKey);
   }
 
   ngAfterViewInit() {

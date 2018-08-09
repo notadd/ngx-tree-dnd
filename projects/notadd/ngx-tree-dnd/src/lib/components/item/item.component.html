@@ -22,7 +22,7 @@
         <i class="material-icons">chevron_right</i>
       </button>
       <div class="ngx-dnd-content">
-        <span class="title">{{model.label}}</span>
+        <span class="title">{{model[key]}}</span>
         <div class="actions">
 					<button
 						class="material-icons"
@@ -35,6 +35,7 @@
 			<ngx-tree-dnd-container
 				*ngIf="model.children"
 				class="container"
+        [labelKey]="key"
 				[model]="model.children"
 				[template]="container.template"
 				[dropZone]="dropZone"

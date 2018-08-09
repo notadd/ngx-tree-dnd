@@ -22,6 +22,7 @@
 + 在你的component中添加`ngx-tree-dnd-container`组件
 ```html
 <ngx-tree-dnd-container
+    [labelKey]="'title'"
     [model]="nestedLists"
     [actions]="actions">
 </ngx-tree-dnd-container> 
@@ -30,39 +31,39 @@
 ```js
 nestedLists = [
   {
-    label: 'Item 1',
+    title: 'Item 1',
     children: []
   },
   {
-    label: 'Item 2',
+    title: 'Item 2',
     children: [
       {
-        label: 'Item 2a',
+        title: 'Item 2a',
         children: []
       },
       {
-        label: 'Item 2b',
+        title: 'Item 2b',
         children: []
       },
       {
-        label: 'Item 2c',
+        title: 'Item 2c',
         children: []
       }
     ]
   },
   {
-    label: 'Item 3',
+    title: 'Item 3',
     children: [
       {
-        label: 'Item 3a',
+        title: 'Item 3a',
         children: []
       },
       {
-        label: 'Item 3b',
+        title: 'Item 3b',
         children: []
       },
       {
-        label: 'Item 3c',
+        title: 'Item 3c',
         children: []
       }
     ]
@@ -90,6 +91,11 @@ actions = [
     }
   ];
 ```
+
+## 属性
++ `labelKey: string`，item title的键值，默认为 'label'
++ `model: array`，tree数据源
++ `actions: array`，item操作项
 
 ## Development server
 

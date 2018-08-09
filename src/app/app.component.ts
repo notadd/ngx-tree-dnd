@@ -7,21 +7,21 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   nestedLists = [
-    {label: 'Item 1', children: [] as any[]},
+    {title: 'Item 1', children: [] as any[]},
     {
-      label: 'Item 2',
+      title: 'title Item 2',
       children: [
-        {label: 'Item 2a', children: [] as any[]},
-        {label: 'Item 2b', children: [] as any[]},
-        {label: 'Item 2c', children: [] as any[]}
+        {title: 'Item 2a', children: [] as any[]},
+        {title: 'Item 2b', children: [] as any[]},
+        {title: 'Item 2c', children: [] as any[]}
       ]
     },
     {
-      label: 'Item 3',
+      title: 'Item 3',
       children: [
-        {label: 'Item 3a', children: [] as any[]},
-        {label: 'Item 3b', children: [] as any[]},
-        {label: 'Item 3c', children: [] as any[]}
+        {title: 'Item 3a', children: [] as any[]},
+        {title: 'Item 3b', children: [] as any[]},
+        {title: 'Item 3c', children: [] as any[]}
       ]
     }
   ];

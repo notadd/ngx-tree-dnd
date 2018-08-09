@@ -18,6 +18,8 @@ import { ActionInterface } from '../../interface/item-action.interface';
   encapsulation: ViewEncapsulation.None
 })
 export class ItemComponent implements OnInit {
+  @Input() key = 'label';
+
   @Input() model: any;
 
   @Input()
@@ -59,7 +61,7 @@ export class ItemComponent implements OnInit {
   set copy(val) {
     this._copy = val;
 	}
-	
+
 	@Input() actions: ActionInterface[];
 
   _copy = false;
@@ -91,7 +93,7 @@ export class ItemComponent implements OnInit {
     }
     return classes.join(' ');
 	}
-	
+
 	@HostBinding('class.expanded') isExpanded: boolean = false;
 
   get type() {
@@ -111,7 +113,7 @@ export class ItemComponent implements OnInit {
       template: this.container.template
 		};
 	}
-	
+
 	toggleExpanded() {
 		this.isExpanded = !this.isExpanded;
 	}
