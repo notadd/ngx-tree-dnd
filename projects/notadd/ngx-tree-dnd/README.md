@@ -1,4 +1,4 @@
-# NgxTreeDnd
+# ngx-tree-dnd
 
 基于[@swimlane/ngx-dnd](https://github.com/swimlane/ngx-dnd)，可拖拽,可配置actions的Angular树组件  
 保留原有的api和feature，修改了默认样式，添加了折叠、action配置
@@ -15,7 +15,7 @@
 #### step-2
 + 添加NgxTreeDnDModule到你的AppModule
 + 在angular.json或者styles中引入material-design-icons
-> 如果你的项目是Angular6，需要在polyfills.ts中添加如下代码：
+> 如果你的项目是Angular6，需要在polyfills.ts中添加如下代码：  
 `(window as any).global = window;`
 
 #### step-3

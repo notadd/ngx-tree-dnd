@@ -15,7 +15,7 @@
 #### step-2
 + 添加NgxTreeDnDModule到你的AppModule
 + 引入material-design-icons
-> 如果你的项目是Angular6，需要在polyfills.ts中添加如下代码：
+> 如果你的项目是Angular6，需要在polyfills.ts中添加如下代码：  
 `(window as any).global = window;`
 
 #### step-3
