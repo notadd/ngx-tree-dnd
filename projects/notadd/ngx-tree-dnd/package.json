@@ -3,8 +3,8 @@
   "description": "基于@swimlane/ngx-dnd，可拖拽,可配置actions的Angular树组件",
   "version": "1.0.4",
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0 || ^7.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0 || ^7.0.0",
     "@swimlane/dragula": "^3.7.3",
     "@types/dragula": "^2.1.33",
     "material-design-icons": "^3.0.1"
