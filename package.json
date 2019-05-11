@@ -29,7 +29,7 @@
     "@types/dragula": "2.1.33",
     "core-js": "2.5.7",
     "material-design-icons": "3.0.1",
-    "rxjs": "6.2.2",
+    "rxjs": "6.5.2",
     "zone.js": "0.8.26"
   },
   "devDependencies": {
