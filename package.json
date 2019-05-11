@@ -32,7 +32,7 @@
     "rxjs": "6.5.2"
   },
   "devDependencies": {
-    "@types/dragula": "2.1.33",
+    "@types/dragula": "2.1.34",
     "@angular/compiler-cli": "7.2.15",
     "@angular/language-service": "7.2.15",
     "@angular-devkit/build-angular": "0.13.9",
