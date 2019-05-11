@@ -28,8 +28,8 @@
     "@swimlane/dragula": "3.8.0",
     "core-js": "2.6.5",
     "material-design-icons": "3.0.1",
-    "rxjs": "6.5.2",
-    "zone.js": "0.8.26"
+    "zone.js": "0.9.1",
+    "rxjs": "6.5.2"
   },
   "devDependencies": {
     "@types/dragula": "2.1.33",
