@@ -26,10 +26,10 @@
     "@angular/platform-browser-dynamic": "7.2.15",
     "@angular/router": "7.2.15",
     "@swimlane/dragula": "3.8.0",
-    "core-js": "2.5.7",
+    "core-js": "2.6.5",
     "material-design-icons": "3.0.1",
-    "rxjs": "6.2.2",
-    "zone.js": "0.9.1"
+    "zone.js": "0.9.1",
+    "rxjs": "6.5.2"
   },
   "devDependencies": {
     "@types/dragula": "2.1.33",
